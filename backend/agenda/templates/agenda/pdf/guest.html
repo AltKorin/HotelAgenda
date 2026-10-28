@@ -1,0 +1,23 @@
+{% extends "agenda/pdf/base.html" %}
+{% block title %}Agenda — {{ group.name }}{% endblock %}
+{% block body %}
+<h1>{{ group.name }}</h1>
+<p class="meta">{{ range }}{% if not group.organizer.is_hotel %} · {{ group.organizer.name }}{% endif %} · {{ hotel.name }}</p>
+{% if draft %}<p class="draft">Szkic do uzgodnienia — może się jeszcze zmienić</p>{% endif %}
+{% if group.announcement %}<p class="announcement">{{ group.announcement }}</p>{% endif %}
+{% for day in days %}
+<h2>{{ day.title }}</h2>
+<table>
+  {% for r in day.rows %}
+  <tr>
+    <td class="time">{{ r.time }}</td>
+    <td class="what"><span class="title">{{ r.title }}</span>{% if r.changed and not draft %}<span class="changed">zmiana</span>{% endif %}</td>
+    <td>{{ r.where }}{% if r.note %}<span class="note">{{ r.note }}</span>{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% empty %}
+<p class="meta">Agenda nie ma jeszcze punktów.</p>
+{% endfor %}
+{% if group.welcome %}<p class="meta" style="margin-top: 14pt; font-style: italic">{{ group.welcome }}</p>{% endif %}
+{% endblock %}

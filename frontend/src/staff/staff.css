@@ -1,0 +1,32 @@
+/* Staff view rides on the panel's tokens (.panel); only its own layout lives here. */
+.staff-notice { display: grid; place-items: center; padding: 24px; text-align: center; }
+.staff { padding-bottom: 48px; }
+.staff-now { margin-bottom: 20px; padding: 16px 18px; border-radius: 12px; background: var(--ocher-soft); }
+.staff-now h2 { margin: 0 0 6px; font: 600 15px/1.3 var(--ui); }
+.staff-now ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.staff-bar { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+.staff-bar .day-tabs { flex: 1 1 auto; margin: 0; }
+.staff-group { margin-top: 28px; }
+.staff-group h2 { margin: 0; font: 400 26px/1.2 var(--serif); }
+.staff-group > .hint { margin: 2px 0 10px; }
+.staff-points { list-style: none; margin: 0; padding: 0; background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; }
+.staff-points > li { padding: 14px 18px; position: relative; }
+.staff-points > li + li { border-top: 1px solid var(--line); }
+.staff-points > li.past { opacity: 0.55; }
+.staff-points > li.now::before { content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 4px; border-radius: 0 3px 3px 0; background: var(--russet); }
+.staff-head { display: grid; grid-template-columns: 120px 1fr auto; gap: 12px; align-items: baseline; }
+.staff-head .time { font-weight: 600; font-variant-numeric: tabular-nums; }
+.staff-head .title { font: 400 19px/1.3 var(--serif); }
+.staff-head .badge { margin-left: 8px; font-family: var(--ui); vertical-align: 2px; }
+.staff-points .hint { margin: 4px 0 0 132px; }
+.staff-card { margin: 10px 0 0 132px; padding: 10px 12px; border-radius: 8px; background: #fff; border: 1px solid var(--line); display: grid; gap: 4px; }
+.staff-card div { display: grid; grid-template-columns: 110px 1fr; gap: 8px; }
+.staff-card dt { margin: 0; color: var(--ink-soft); font-size: 14px; }
+.staff-card dd { margin: 0; }
+.staff-card dd.pre { white-space: pre-line; }
+@media (max-width: 720px) {
+  .staff-head { grid-template-columns: 1fr auto; }
+  .staff-head .time { grid-column: 1 / -1; }
+  .staff-points .hint, .staff-card { margin-left: 0; }
+  .staff-card div { grid-template-columns: 96px 1fr; }
+}

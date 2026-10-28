@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" role="img" aria-label="Hotel Bursztynowa Polana">
+  <g transform="translate(14 14)">
+    <path d="M46 4 C66 30 76 46 76 62 a30 30 0 0 1-60 0 C16 46 26 30 46 4z" fill="#d9a441"/>
+    <path d="M46 26 C56 40 61 50 61 60 a15 15 0 0 1-30 0 C31 50 36 40 46 26z" fill="#f3d27a"/>
+    <path d="M0 92 q23-14 46-6 t46-4" fill="none" stroke="#33475e" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="124" y="64" font-family="Georgia, serif" font-size="40" fill="#33475e">Bursztynowa Polana</text>
+  <text x="126" y="98" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="3" fill="#8a6d33">hotel &amp; spa ★★★</text>
+</svg>

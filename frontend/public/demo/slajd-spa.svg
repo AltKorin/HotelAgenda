@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Strefa SPA czynna codziennie do 22:00">
+  <rect width="1920" height="1080" fill="#26364a"/>
+  <g fill="none" stroke="#bf9e5a" stroke-opacity="0.35" stroke-width="3">
+    <circle cx="1480" cy="560" r="300"/><circle cx="1480" cy="560" r="380"/><circle cx="1480" cy="560" r="470"/>
+  </g>
+  <circle cx="1480" cy="560" r="220" fill="#33475e"/>
+  <path d="M1430 650 q-40-60 0-120 t0-120 M1490 650 q-40-60 0-120 t0-120 M1550 650 q-40-60 0-120 t0-120" fill="none" stroke="#f6e7b4" stroke-width="10" stroke-linecap="round"/>
+  <text x="140" y="420" font-family="Georgia, serif" font-size="150" fill="#f6e7b4">Strefa SPA</text>
+  <text x="146" y="520" font-family="Georgia, serif" font-style="italic" font-size="54" fill="#bf9e5a">sauny, jacuzzi i masaże</text>
+  <text x="146" y="660" font-family="Helvetica, Arial, sans-serif" font-size="46" fill="#f6e7b4">Codziennie 10:00–22:00, poziom −1</text>
+  <rect x="146" y="740" width="560" height="84" rx="10" fill="#d8432a"/>
+  <text x="182" y="796" font-family="Helvetica, Arial, sans-serif" font-size="38" fill="#fbf3d9">Masaż? Zapisy w recepcji</text>
+</svg>

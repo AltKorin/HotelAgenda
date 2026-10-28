@@ -1,0 +1,152 @@
+[
+  {
+    "id": "granat-bursztyn",
+    "name": "Granat i bursztyn",
+    "slownik": "241, s. 150: Dark Medici Blue, Pale Lemon Yellow, Isabella, Red Orange",
+    "dark": true,
+    "colors": {
+      "bg": "#33475e",
+      "ink": "#f6e7b4",
+      "muted": "#bf9e5a",
+      "accent": "#d8432a",
+      "accentInk": "#fbf3d9",
+      "band": "#fbf3d9"
+    },
+    "fonts": "playfair-display--lato"
+  },
+  {
+    "id": "ecru-rdza",
+    "name": "Ecru i rdza",
+    "slownik": "249, s. 158: Ecru, Dark Medici Blue, Hay's Russet, Olive Ocher",
+    "dark": false,
+    "colors": {
+      "bg": "#efe8da",
+      "ink": "#1d3d4d",
+      "muted": "#2f6a80",
+      "accent": "#8a2f22",
+      "accentInk": "#f7f1e3",
+      "band": "#fbf8f1"
+    },
+    "fonts": "cinzel--fauna-one"
+  },
+  {
+    "id": "fiolet-cytryna",
+    "name": "Fiolet i cytryna",
+    "slownik": "145, s. 100: Dull Violet Black, Citron Yellow, Brown",
+    "dark": true,
+    "colors": {
+      "bg": "#1e1d40",
+      "ink": "#efeacb",
+      "muted": "#c9bb2a",
+      "accent": "#b5502e",
+      "accentInk": "#fff4e0",
+      "band": "#f4f1e1"
+    },
+    "fonts": "yeseva-one--josefin-sans"
+  },
+  {
+    "id": "oliwka-zielen",
+    "name": "Oliwka i zieleń",
+    "slownik": "146, s. 100: Deep Grayish Olive, Khaki, Diamine Green",
+    "dark": true,
+    "colors": {
+      "bg": "#3c3627",
+      "ink": "#f2e7cc",
+      "muted": "#d08b2c",
+      "accent": "#23864a",
+      "accentInk": "#f6f0de",
+      "band": "#f4ecd8"
+    },
+    "fonts": "source-sans-3--alegreya"
+  },
+  {
+    "id": "mieta-wisnia",
+    "name": "Mięta i wiśnia",
+    "slownik": "147, s. 101: Turquoise Green, Vandyke Red, Spinel Red",
+    "dark": false,
+    "colors": {
+      "bg": "#d3e9e1",
+      "ink": "#5c1521",
+      "muted": "#8b2a37",
+      "accent": "#c43f6c",
+      "accentInk": "#fff5f8",
+      "band": "#f6fbf9"
+    },
+    "fonts": "poiret-one--montserrat"
+  },
+  {
+    "id": "lazur-slonce",
+    "name": "Lazur i słońce",
+    "slownik": "148, s. 101: Cerulian Blue, Orange Yellow, Olive Ocher",
+    "dark": true,
+    "colors": {
+      "bg": "#1d6c8c",
+      "ink": "#fff6df",
+      "muted": "#f6c55a",
+      "accent": "#f0a818",
+      "accentInk": "#10364a",
+      "band": "#fff8e8"
+    },
+    "fonts": "syne--inter"
+  },
+  {
+    "id": "braz-krem",
+    "name": "Brąz i krem",
+    "slownik": "192, s. 123: Vandyke Brown, Cream Yellow, Deep Violet / Plumbeous",
+    "dark": true,
+    "colors": {
+      "bg": "#2d1e1a",
+      "ink": "#f4e2b4",
+      "muted": "#e8b44a",
+      "accent": "#7f82a8",
+      "accentInk": "#fdf8ee",
+      "band": "#f7eedb"
+    },
+    "fonts": "abril-fatface--lato"
+  },
+  {
+    "id": "turkus-grenadyna",
+    "name": "Turkus i grenadyna",
+    "slownik": "193, s. 124: Light Porcelain Green, Naples Yellow, Grenadine Pink",
+    "dark": true,
+    "colors": {
+      "bg": "#12706b",
+      "ink": "#f4e8b6",
+      "muted": "#e8d48c",
+      "accent": "#ee6542",
+      "accentInk": "#fff7ea",
+      "band": "#fbf6e2"
+    },
+    "fonts": "young-serif--instrument-sans"
+  },
+  {
+    "id": "muszla-blekit",
+    "name": "Muszla i błękit",
+    "slownik": "194, s. 124: Seashell Pink, Olympic Blue, Jasper Red",
+    "dark": false,
+    "colors": {
+      "bg": "#f7e9df",
+      "ink": "#1d346e",
+      "muted": "#3f6dc7",
+      "accent": "#dc3a25",
+      "accentInk": "#fff8f3",
+      "band": "#fffaf6"
+    },
+    "fonts": "rethink-sans--spectral"
+  },
+  {
+    "id": "granat-pomarancz",
+    "name": "Granat i pomarańcz",
+    "slownik": "141, s. 98: Dark Tyrian Blue, Orange, Yellow Green",
+    "dark": true,
+    "colors": {
+      "bg": "#1b2141",
+      "ink": "#f5f2e6",
+      "muted": "#b6c640",
+      "accent": "#ef5a1e",
+      "accentInk": "#fff6ee",
+      "band": "#f7f6ef"
+    },
+    "fonts": "oswald--source-serif-4"
+  }
+]

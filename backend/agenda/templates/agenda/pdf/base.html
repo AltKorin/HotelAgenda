@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+<style>
+  @font-face { font-family: "Lato"; src: url("Lato-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Lato"; src: url("Lato-Bold.ttf"); font-weight: 700; }
+  @font-face { font-family: "Lato"; src: url("Lato-Italic.ttf"); font-style: italic; }
+  @font-face { font-family: "Young Serif"; src: url("YoungSerif-Regular.ttf"); }
+  /* Słownik Kolorów 249 (as the panel): Dark Medici Blue ink, Hay's Russet for changes, Ecru rules. */
+  @page {
+    size: A4;
+    margin: 16mm 15mm 18mm;
+    @bottom-left { content: element(footer); }
+    @bottom-right { content: "strona " counter(page) " z " counter(pages); font: 8pt "Lato"; color: #6b7c85; }
+  }
+  body { font: 10.5pt/1.4 "Lato"; color: #1d3d4d; margin: 0; }
+  .footer { position: running(footer); font: 8pt "Lato"; color: #6b7c85; }
+  h1, h2, h3 { font-family: "Young Serif"; font-weight: 400; margin: 0; }
+  h1 { font-size: 24pt; line-height: 1.1; }
+  h2 { font-size: 14pt; margin: 16pt 0 6pt; padding-bottom: 3pt; border-bottom: 1.5pt solid #1d3d4d; }
+  h3 { font-size: 12pt; }
+  .meta { color: #4d6470; margin: 4pt 0 0; }
+  .draft { display: inline-block; margin-top: 8pt; padding: 3pt 8pt; border: 1pt solid #8a2f22; color: #8a2f22; font-weight: 700; font-size: 9pt; }
+  .announcement { margin: 12pt 0 0; padding: 7pt 10pt; border-left: 3pt solid #8a2f22; background: #f5ece6; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 5pt 6pt 5pt 0; vertical-align: top; border-bottom: 0.6pt solid #d9cfbd; }
+  td.time { width: 24mm; font-weight: 700; white-space: nowrap; }
+  td.what { width: 62mm; }
+  .title { font-family: "Young Serif"; font-size: 11.5pt; }
+  .note { display: block; color: #4d6470; font-size: 9pt; }
+  .changed { color: #8a2f22; font-weight: 700; font-size: 8pt; margin-left: 4pt; }
+  .tag { font-size: 8pt; color: #4d6470; border: 0.6pt solid #b9ae98; padding: 0 3pt; margin-left: 4pt; }
+  tr { page-break-inside: avoid; }
+  .box { display: inline-block; width: 7pt; height: 7pt; border: 0.8pt solid #1d3d4d; margin-right: 5pt; vertical-align: -0.5pt; }
+</style>
+</head>
+<body><div class="footer">{{ hotel.name }}</div>{% block body %}{% endblock %}</body>
+</html>

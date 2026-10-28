@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-label="Fundacja Wspólna Droga">
+  <circle cx="60" cy="60" r="50" fill="#2f7d6d"/>
+  <path d="M30 92 C48 70 34 52 56 40 S82 30 90 18" fill="none" stroke="#fbf3d9" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="44" cy="36" r="7" fill="#f2b84b"/>
+  <circle cx="74" cy="78" r="7" fill="#f2b84b"/>
+  <text x="130" y="56" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="34" fill="#2f7d6d">Fundacja</text>
+  <text x="130" y="96" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#24453e">Wspólna Droga</text>
+</svg>

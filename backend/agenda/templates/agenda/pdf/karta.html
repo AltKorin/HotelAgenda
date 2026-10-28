@@ -1,0 +1,27 @@
+{% extends "agenda/pdf/base.html" %}
+{% block title %}Karta zlecenia — {{ point.title }}{% endblock %}
+{% block body %}
+<p class="meta">Karta zlecenia · {{ group.name }}</p>
+<h1 style="margin-top: 4pt">{{ point.title }}</h1>
+<p class="meta" style="font-size: 12pt; color: #1d3d4d">{{ day }}, <strong>{{ point.time }}</strong></p>
+{% if point.visibility == "staff" %}<p class="meta">Punkt tylko dla obsługi — goście go nie widzą.</p>{% endif %}
+{% if point.realizer == "organizer" %}<p class="meta">Punkt realizuje organizator; hotel zapewnia poniższe usługi.</p>{% endif %}
+{% if draft %}<p class="draft">Szkic — może się jeszcze zmienić</p>{% endif %}
+{% for c in point.cards %}
+<h2>{{ c.place }}{% if c.subgroup %} — {{ c.subgroup }}{% endif %}</h2>
+<table>
+  {% if c.headcount is not None %}<tr><td class="time">Liczba osób</td><td><strong>{{ c.headcount }}</strong></td></tr>{% endif %}
+  {% if c.service %}<tr><td class="time">Obsługa</td><td>{{ c.service }}</td></tr>{% endif %}
+  {% if c.setup %}<tr><td class="time">Ustawienie</td><td>{{ c.setup }}</td></tr>{% endif %}
+  {% if c.menu %}<tr><td class="time">Menu</td><td>{{ c.menu|linebreaksbr }}</td></tr>{% endif %}
+  {% if c.todo %}<tr><td class="time">Do zrobienia</td><td>{{ c.todo|linebreaksbr }}</td></tr>{% endif %}
+  {% if c.responsible %}<tr><td class="time">Odpowiada</td><td>{{ c.responsible }}</td></tr>{% endif %}
+  {% if c.required_items %}
+  <tr><td class="time">Niezbędne</td><td>{% for item in c.required_items %}<div><span class="box"></span>{{ item }}</div>{% endfor %}</td></tr>
+  {% endif %}
+</table>
+{% empty %}
+<p class="meta" style="margin-top: 14pt">Ten punkt nie ma jeszcze karty zlecenia (sali i zadań dla obsługi).</p>
+{% endfor %}
+{% if point.note %}<p class="announcement">Goście widzą uwagę: {{ point.note }}</p>{% endif %}
+{% endblock %}

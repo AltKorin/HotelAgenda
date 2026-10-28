@@ -1,0 +1,591 @@
+[
+  {
+    "id": "abril-fatface--lato",
+    "name": "Abril Fatface i Lato",
+    "mood": "Luksusowo i wydawniczo: mocne nagłówki, czysty tekst",
+    "figma": 1,
+    "display": {
+      "family": "'Abril Fatface', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 0.9,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Lato', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "space-mono--plus-jakarta-sans",
+    "name": "Space Mono i Plus Jakarta Sans",
+    "mood": "Retro-techniczny, nowoczesny, czytelny",
+    "figma": 3,
+    "display": {
+      "family": "'Space Mono', system-ui, sans-serif",
+      "weight": 700,
+      "titleWeight": 700,
+      "tracking": "-0.02em",
+      "transform": "none",
+      "scale": 0.88,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Plus Jakarta Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "grand-hotel--lato",
+    "name": "Grand Hotel i Lato",
+    "mood": "Elegancki odręczny nagłówek, prosty tekst",
+    "figma": 4,
+    "display": {
+      "family": "'Grand Hotel', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 1.15,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Lato', system-ui, sans-serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "raleway--merriweather",
+    "name": "Raleway i Merriweather",
+    "mood": "Smukły i współczesny, wygodny do czytania",
+    "figma": 5,
+    "display": {
+      "family": "'Raleway', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Merriweather', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "chonburi--domine",
+    "name": "Chonburi i Domine",
+    "mood": "Zabawny i retro, z poważnym tekstem",
+    "figma": 6,
+    "display": {
+      "family": "'Chonburi', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 0.82,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Domine', Georgia, serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "inter--krub",
+    "name": "Inter i Krub",
+    "mood": "Nowoczesny i czysty, z ciekawymi pętelkami",
+    "figma": 7,
+    "display": {
+      "family": "'Inter', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.02em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Krub', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "oswald--source-serif-4",
+    "name": "Oswald i Source Serif 4",
+    "mood": "Mocne, wąskie nagłówki i solidny szeryfowy tekst",
+    "figma": 8,
+    "display": {
+      "family": "'Oswald', system-ui, sans-serif",
+      "weight": 500,
+      "titleWeight": 500,
+      "tracking": "0.01em",
+      "transform": "none",
+      "scale": 1.08,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Source Serif 4', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "arima--mulish",
+    "name": "Arima i Mulish",
+    "mood": "Ciepły i twórczy, z dopracowanym tekstem",
+    "figma": 9,
+    "display": {
+      "family": "'Arima', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Mulish', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "nunito--lora",
+    "name": "Nunito i Lora",
+    "mood": "Przyjazny i ciepły, z eleganckim szeryfem",
+    "figma": 10,
+    "display": {
+      "family": "'Nunito', system-ui, sans-serif",
+      "weight": 700,
+      "titleWeight": 700,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Lora', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "ultra--slabo-27px",
+    "name": "Ultra i Slabo 27px",
+    "mood": "Mocny i wyrazisty, z dużym efektem",
+    "figma": 11,
+    "display": {
+      "family": "'Ultra', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 0.82,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Slabo 27px', Georgia, serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "unica-one--crimson-text",
+    "name": "Unica One i Crimson Text",
+    "mood": "Ostry i nowoczesny, z ponadczasowym tekstem",
+    "figma": 13,
+    "display": {
+      "family": "'Unica One', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0.02em",
+      "transform": "none",
+      "scale": 1.05,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Crimson Text', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "cinzel--fauna-one",
+    "name": "Cinzel i Fauna One",
+    "mood": "Szlachetny, rzymski, z miękkim tekstem",
+    "figma": 14,
+    "display": {
+      "family": "'Cinzel', Georgia, serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "0.02em",
+      "transform": "none",
+      "scale": 0.92,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Fauna One', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "yeseva-one--josefin-sans",
+    "name": "Yeseva One i Josefin Sans",
+    "mood": "Elegancki i świeży",
+    "figma": 15,
+    "display": {
+      "family": "'Yeseva One', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 0.95,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Josefin Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "roboto--lora",
+    "name": "Roboto i Lora",
+    "mood": "Współczesny bezszeryfowy z ciepłym szeryfem",
+    "figma": 17,
+    "display": {
+      "family": "'Roboto', system-ui, sans-serif",
+      "weight": 500,
+      "titleWeight": 500,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Lora', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "montserrat--karla",
+    "name": "Montserrat i Karla",
+    "mood": "Dopracowany i uniwersalny",
+    "figma": 18,
+    "display": {
+      "family": "'Montserrat', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.015em",
+      "transform": "none",
+      "scale": 0.95,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Karla', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "fjalla-one--cantarell",
+    "name": "Fjalla One i Cantarell",
+    "mood": "Pewny siebie, z przyjaznym tekstem",
+    "figma": 19,
+    "display": {
+      "family": "'Fjalla One', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0.01em",
+      "transform": "none",
+      "scale": 1.05,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Cantarell', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "source-sans-3--alegreya",
+    "name": "Source Sans 3 i Alegreya",
+    "mood": "Stonowany i literacki, profesjonalny",
+    "figma": 20,
+    "display": {
+      "family": "'Source Sans 3', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Alegreya', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "stint-ultra-expanded--pontano-sans",
+    "name": "Stint Ultra Expanded i Pontano Sans",
+    "mood": "Bardzo szerokie nagłówki, smukły tekst",
+    "figma": 21,
+    "display": {
+      "family": "'Stint Ultra Expanded', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 0.7,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Pontano Sans', system-ui, sans-serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "ubuntu--rokkitt",
+    "name": "Ubuntu i Rokkitt",
+    "mood": "Przyjazny i profesjonalny, z charakterem",
+    "figma": 22,
+    "display": {
+      "family": "'Ubuntu', system-ui, sans-serif",
+      "weight": 500,
+      "titleWeight": 500,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Rokkitt', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "nunito--pt-sans",
+    "name": "Nunito i PT Sans",
+    "mood": "Przyjazny i czytelny z daleka",
+    "figma": 23,
+    "display": {
+      "family": "'Nunito', system-ui, sans-serif",
+      "weight": 700,
+      "titleWeight": 600,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'PT Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "playfair-display--lato",
+    "name": "Playfair Display i Lato",
+    "mood": "Wyrafinowany, a przy tym łatwy w czytaniu",
+    "figma": 25,
+    "display": {
+      "family": "'Playfair Display', Georgia, serif",
+      "weight": 500,
+      "titleWeight": 500,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 0.96,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Lato', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "quicksand",
+    "name": "Quicksand",
+    "mood": "Lekki i młodzieżowy, jedna rodzina",
+    "figma": 26,
+    "display": {
+      "family": "'Quicksand', system-ui, sans-serif",
+      "weight": 700,
+      "titleWeight": 600,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Quicksand', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "syne--inter",
+    "name": "Syne i Inter",
+    "mood": "Świeży i charakterystyczny, z wyraźnym tekstem",
+    "figma": 27,
+    "display": {
+      "family": "'Syne', system-ui, sans-serif",
+      "weight": 700,
+      "titleWeight": 600,
+      "tracking": "-0.02em",
+      "transform": "none",
+      "scale": 0.95,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Inter', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "yellowtail--rethink-sans",
+    "name": "Yellowtail i Rethink Sans",
+    "mood": "Retro pędzelek, zabawny",
+    "figma": 28,
+    "display": {
+      "family": "'Yellowtail', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 1.15,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Rethink Sans', system-ui, sans-serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "poiret-one--montserrat",
+    "name": "Poiret One i Montserrat",
+    "mood": "Art déco, stylowy i luksusowy",
+    "figma": 30,
+    "display": {
+      "family": "'Poiret One', system-ui, sans-serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0.01em",
+      "transform": "none",
+      "scale": 1.1,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Montserrat', system-ui, sans-serif"
+    },
+    "titles": "text"
+  },
+  {
+    "id": "cardo--hind",
+    "name": "Cardo i Hind",
+    "mood": "Klasyczny i tradycyjny, z funkcjonalnym tekstem",
+    "figma": 33,
+    "display": {
+      "family": "'Cardo', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 1.02,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Hind', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "archivo-narrow--tenor-sans",
+    "name": "Archivo Narrow i Tenor Sans",
+    "mood": "Wąskie nagłówki do ciasnych miejsc, elegancki tekst",
+    "figma": 35,
+    "display": {
+      "family": "'Archivo Narrow', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "0",
+      "transform": "none",
+      "scale": 1.08,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Tenor Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "rethink-sans--spectral",
+    "name": "Rethink Sans i Spectral",
+    "mood": "Harmonijny i współczesny, z redakcyjnym sznytem",
+    "figma": 36,
+    "display": {
+      "family": "'Rethink Sans', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.02em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Spectral', Georgia, serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "crimson-pro--dm-sans",
+    "name": "Crimson Pro i DM Sans",
+    "mood": "Klasyczna wiarygodność i nowoczesny tekst",
+    "figma": 37,
+    "display": {
+      "family": "'Crimson Pro', Georgia, serif",
+      "weight": 500,
+      "titleWeight": 600,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 1.05,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'DM Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "young-serif--instrument-sans",
+    "name": "Young Serif i Instrument Sans",
+    "mood": "Charakterne nagłówki i spokojny tekst",
+    "figma": 38,
+    "display": {
+      "family": "'Young Serif', Georgia, serif",
+      "weight": 400,
+      "titleWeight": 400,
+      "tracking": "-0.01em",
+      "transform": "none",
+      "scale": 0.92,
+      "italicGroup": false
+    },
+    "text": {
+      "family": "'Instrument Sans', system-ui, sans-serif"
+    },
+    "titles": "display"
+  },
+  {
+    "id": "instrument-sans--geist",
+    "name": "Instrument Sans i Geist",
+    "mood": "Czysty, minimalistyczny i funkcjonalny",
+    "figma": 39,
+    "display": {
+      "family": "'Instrument Sans', system-ui, sans-serif",
+      "weight": 600,
+      "titleWeight": 600,
+      "tracking": "-0.02em",
+      "transform": "none",
+      "scale": 1,
+      "italicGroup": true
+    },
+    "text": {
+      "family": "'Geist', system-ui, sans-serif"
+    },
+    "titles": "display"
+  }
+]

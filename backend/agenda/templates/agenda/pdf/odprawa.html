@@ -1,0 +1,38 @@
+{% extends "agenda/pdf/base.html" %}
+{% block title %}Odprawa — {{ day }}{% endblock %}
+{% block body %}
+<h1>Odprawa: {{ day }}</h1>
+<p class="meta">{{ hotel.name }} · opublikowane agendy wszystkich grup w hotelu</p>
+{% for s in sections %}
+<h2>{{ s.group.name }}{% if not s.group.organizer.is_hotel %} <span class="meta" style="font-family: Lato; font-size: 9.5pt">{{ s.group.organizer.name }}</span>{% endif %}</h2>
+{% if s.group.announcement %}<p class="announcement" style="margin-top: 0">Ogłoszenie dla gości: {{ s.group.announcement }}</p>{% endif %}
+<table>
+  {% for r in s.rows %}
+  <tr>
+    <td class="time">{{ r.time }}</td>
+    <td class="what">
+      <span class="title">{{ r.title }}</span>
+      {% if r.visibility == "staff" %}<span class="tag">tylko obsługa</span>{% endif %}
+      {% if r.realizer == "organizer" %}<span class="tag">organizator</span>{% endif %}
+      {% if r.changed %}<span class="changed">zmiana</span>{% endif %}
+      {% if r.note %}<span class="note">Dla gości: {{ r.note }}</span>{% endif %}
+    </td>
+    <td>
+      {% for c in r.cards %}
+      <div style="{% if not forloop.first %}margin-top: 4pt; padding-top: 4pt; border-top: 0.5pt dotted #c9bfa9;{% endif %}">
+        <strong>{{ c.place }}</strong>{% if c.subgroup %}, {{ c.subgroup }}{% endif %}{% if c.headcount is not None %}, {{ c.headcount }} os.{% endif %}{% if c.service %} · obsługa {{ c.service }}{% endif %}
+        {% if c.setup %}<span class="note">Ustawienie: {{ c.setup }}</span>{% endif %}
+        {% if c.menu %}<span class="note">Menu: {{ c.menu|linebreaksbr }}</span>{% endif %}
+        {% if c.required_items %}<span class="note">Potrzebne: {{ c.required_items|join:", " }}</span>{% endif %}
+        {% if c.todo %}<span class="note">Do zrobienia: {{ c.todo|linebreaksbr }}</span>{% endif %}
+        {% if c.responsible %}<span class="note">Odpowiada: {{ c.responsible }}</span>{% endif %}
+      </div>
+      {% empty %}{{ r.where }}{% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% empty %}
+<p class="meta" style="margin-top: 16pt">Tego dnia w hotelu nie ma opublikowanych punktów.</p>
+{% endfor %}
+{% endblock %}

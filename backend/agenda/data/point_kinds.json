@@ -1,0 +1,8 @@
+[
+  {"id": "posilek", "name": "Posiłek", "card_hints": ["menu", "headcount", "setup"]},
+  {"id": "przerwa", "name": "Przerwa kawowa", "card_hints": ["menu", "headcount"]},
+  {"id": "szkolenie", "name": "Szkolenie / spotkanie", "card_hints": ["setup", "headcount", "required_items"]},
+  {"id": "impreza", "name": "Impreza", "card_hints": ["setup", "headcount", "required_items", "menu"]},
+  {"id": "przyjazd", "name": "Przyjazd / wyjazd", "card_hints": ["todo", "headcount"]},
+  {"id": "inne", "name": "Inne", "card_hints": ["todo"]}
+]

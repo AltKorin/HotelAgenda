@@ -1,0 +1,86 @@
+{
+  "_jak_wypelnic": "Skopiuj do deploy/hotel.json (cp backend/agenda/data/hotel.example.json deploy/hotel.json) i uzupełnij. Nazwy sal tak, jak mówi obsługa. Logo: plik w deploy/media/, tu ścieżka /media/<plik>.",
+  "hotel": {
+    "name": "Hotel Przykładowy",
+    "timezone": "Europe/Warsaw",
+    "logo": "/media/logo-hotelu.png"
+  },
+  "spaces": [
+    "Restauracja",
+    "Sala A",
+    "Sala B",
+    "Recepcja",
+    "Hol"
+  ],
+  "typical_points": [
+    {
+      "kind": "posilek",
+      "title": "Śniadanie",
+      "start": "08:00",
+      "end": "10:00",
+      "space": "Restauracja",
+      "card": {
+        "menu": "Bufet śniadaniowy",
+        "responsible": "Kuchnia"
+      }
+    },
+    {
+      "kind": "posilek",
+      "title": "Obiad",
+      "start": "13:00",
+      "end": "14:00",
+      "space": "Restauracja",
+      "card": {
+        "responsible": "Kuchnia"
+      }
+    },
+    {
+      "kind": "posilek",
+      "title": "Kolacja",
+      "start": "18:00",
+      "end": "19:30",
+      "space": "Restauracja",
+      "card": {
+        "responsible": "Kuchnia"
+      }
+    },
+    {
+      "kind": "przerwa",
+      "title": "Przerwa kawowa",
+      "start": "11:00",
+      "end": "11:15",
+      "space": "Sala A",
+      "card": {
+        "menu": "Kawa, herbata, ciasto",
+        "responsible": "Sala"
+      }
+    },
+    {
+      "kind": "przyjazd",
+      "title": "Wymeldowanie",
+      "end": "11:00",
+      "label": "until",
+      "card": {
+        "responsible": "Recepcja"
+      },
+      "space": "Recepcja",
+      "guest_note": "Prosimy o zwolnienie pokoi"
+    }
+  ],
+  "accounts": [
+    {
+      "username": "dyrektor",
+      "role": "dyrektor"
+    },
+    {
+      "username": "recepcja",
+      "role": "kierownik"
+    }
+  ],
+  "slides": [
+    {
+      "image": "/media/slajd-spa.png",
+      "alt": "Strefa SPA czynna codziennie do 22:00"
+    }
+  ]
+}

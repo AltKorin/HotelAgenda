@@ -4,6 +4,12 @@
 
 Stan: 2026-10-16. MVP gotowe (kroki 1–6) + pakiet wdrożeniowy przećwiczony od zera. **PRODUKCJA: https://agenda.sudomie.pl** (LXC 106 na proxmox-hp, alias `hotelagenda-prod`, Cloudflare Tunnel `hotelagenda`) — szczegóły w `deploy/PROXMOX-HP.md`. Następne: część B `deploy/WDROZENIE.md` w hotelu. Klient: **Hotel Niedźwiadek** (Wdzydze) — `deploy/hotel.json` i logo przygotowane, przećwiczone lokalnie; czeka: rezerwacja DHCP dla LXC 106 na routerze, potwierdzenie `_do_potwierdzenia` przez dyrektora, slajdy hotelu.
 
+## Repozytorium (28.10)
+- **Prywatne** https://github.com/AltKorin/HotelAgenda (gałąź `main`). Poza gitem (`.gitignore`): dane klienta — `Materiały/`,
+  `deploy/hotel.json`, `deploy/pobrane-niedzwiadek/`, `deploy/przyklady/`, `deploy/media/*` — są tylko lokalnie i na serwerze.
+  `deploy/push.sh` wysyła drzewo z dysku (rsync), nie z gita — wykluczenia gita nie zmieniają wdrożeń.
+- Push: `git -c credential.helper= -c credential.helper='!gh auth git-credential' push` (albo raz `gh auth setup-git`).
+
 ## Dokumenty
 - `PLAN.md` — **v2**, plan MVP; ustalenia w §1, kolejność prac §8, paleta §9.
 - `GLOSSARY.md` — kanoniczne terminy (Grupa, Agenda, Punkt agendy, Karta zlecenia, Ekran, Odprawa…). Pisz w tym języku, także w UI.

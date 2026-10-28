@@ -258,3 +258,4 @@
 ### Następne kroki
 - Wdrożone 28.10 po zgodzie (backup bazy przed, `DEMO_MAX=200`): testy na serwerze 83/83, smoke OK, `e2e:demo` na produkcji 5/5.
 - Test `test_terms_and_public_config_are_public` padał na serwerze niezależnie od demo (produkcja ma GA ID) — przypięte `GA_MEASUREMENT_ID=""` i `DEMO_MAX=0`.
+- 28.10: projekt pod gitem, prywatne repo https://github.com/AltKorin/HotelAgenda; dane klienta wykluczone w `.gitignore`.

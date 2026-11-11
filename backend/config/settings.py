@@ -164,3 +164,8 @@ JAZZMIN_SETTINGS = {
 # DEMO_MAX=0 hides the „Wypróbuj demo” button (CLAUDE.md: feature flag, switched on per deployment).
 DEMO_MAX = int(os.environ.get("DEMO_MAX", "0"))
 DEMO_HOURS = int(os.environ.get("DEMO_HOURS", "24"))
+
+# Newsletter sudomie: pusty klucz = funkcja wyłączona (flaga). Klucz per aplikacja, nadany w sudomie.pl.
+NEWSLETTER_URL = os.environ.get("NEWSLETTER_URL", "https://sudomie.pl/chat-api/newsletter")
+NEWSLETTER_KLUCZ = os.environ.get("NEWSLETTER_KLUCZ", "")
+NEWSLETTER_TIMEOUT = float(os.environ.get("NEWSLETTER_TIMEOUT", "5"))

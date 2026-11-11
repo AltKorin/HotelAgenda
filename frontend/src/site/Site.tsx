@@ -96,6 +96,11 @@ function ConsentBar() {
 function Register() {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
+  useEffect(() => {
+    // Pole pokazujemy tylko, gdy wdrożenie ma klucz newslettera (flaga w public-config).
+    fetch("/api/public-config/").then((r) => r.json()).then((c: { newsletter?: boolean }) => setNewsletter(Boolean(c.newsletter))).catch(() => undefined);
+  }, []);
   useEffect(() => {
     loadSession().catch(() => undefined); // sets the CSRF cookie and token
   }, []);
@@ -112,6 +117,7 @@ function Register() {
         password: f.get("password"),
         accept: f.get("accept") === "on",
         website: f.get("website") ?? "",
+        newsletter: f.get("newsletter") === "on",
       });
       window.gtag?.("event", "sign_up", { method: "email" });
       window.location.assign("/panel");
@@ -151,6 +157,12 @@ function Register() {
             <a href={PRIVACY} target="_blank" rel="noopener">polityką prywatności</a>.
           </span>
         </label>
+        {newsletter && (
+          <label className="check">
+            <input name="newsletter" type="checkbox" />
+            <span>Chcę dostawać newsletter sudomie raz w miesiącu: nowości w Agendzie i poradniki. Potwierdzę zapis linkiem z maila, wypiszę się w każdej chwili.</span>
+          </label>
+        )}
         <button className="btn primary big" disabled={busy}>{busy ? "Zakładam konto…" : "Załóż konto"}</button>
         <p className="hint">
           Zostaniesz dyrektorem hotelu w Agendzie: dodasz konta kierowników, sale i typowe punkty. Masz już konto? <a href="/panel">Zaloguj się</a>.

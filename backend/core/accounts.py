@@ -21,6 +21,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django.db import IntegrityError, transaction
 
+from . import newsletter
 from .domain_errors import DomainError
 from .models import TermsAcceptance
 from .signals import client_ip
@@ -83,6 +84,9 @@ def register(request, data):
     HotelMember.objects.create(hotel=hotel, user=user, role="dyrektor")
     current = terms()
     TermsAcceptance.objects.create(user=user, version=current["version"], sha256=current["sha256"], ip=client_ip(request))
+    if data.get("newsletter") is True and newsletter.wlaczony():
+        # Dopiero po zatwierdzeniu transakcji: nieudana rejestracja nie zapisuje nikogo do newslettera.
+        transaction.on_commit(lambda ip=client_ip(request): newsletter.zapisz(email, ip))
     return user, hotel
 
 

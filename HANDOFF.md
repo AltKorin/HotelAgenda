@@ -4,6 +4,16 @@
 
 Stan: 2026-10-16. MVP gotowe (kroki 1–6) + pakiet wdrożeniowy przećwiczony od zera. **PRODUKCJA: https://agenda.sudomie.pl** (LXC 106 na proxmox-hp, alias `hotelagenda-prod`, Cloudflare Tunnel `hotelagenda`) — szczegóły w `deploy/PROXMOX-HP.md`. Następne: część B `deploy/WDROZENIE.md` w hotelu. Klient: **Hotel Niedźwiadek** (Wdzydze) — `deploy/hotel.json` i logo przygotowane, przećwiczone lokalnie; czeka: rezerwacja DHCP dla LXC 106 na routerze, potwierdzenie `_do_potwierdzenia` przez dyrektora, slajdy hotelu.
 
+## Newsletter sudomie przy rejestracji (2026-11-11, KOD GOTOWY, NIEZACOMMITOWANE, NIEWDROŻONE)
+- Pole „Chcę dostawać newsletter sudomie” przy rejestracji, domyślnie niezaznaczone. Kod: `backend/core/newsletter.py`, pole w `frontend/src/site/Site.tsx`, flaga `newsletter` w `/api/public-config/`.
+- **Flaga:** bez `NEWSLETTER_KLUCZ` w `.env` pola nie ma i nic nie wychodzi. Z kluczem: po zatwierdzeniu rejestracji
+  `POST https://sudomie.pl/chat-api/newsletter` (e-mail + IP użytkownika, nagłówek `X-Newsletter-Klucz`); sudomie.pl wysyła link
+  potwierdzający i trzyma dowód zgody. Błąd sieci = wpis w logu, rejestracja przechodzi. Tu nic nie zapisujemy w bazie.
+- **Wdrożenie:** (1) najpierw `bash ~/Claude/sudomie.pl/scripts/wdroz-klucze-newslettera.sh`; (2) zwykły deploy tej aplikacji;
+  (3) do `.env` produkcji dwie linie z `~/.config/sudomie/newsletter-env-dla-aplikacji.txt` (sekcja tej aplikacji) i restart;
+  (4) próba: rejestracja z zaznaczonym polem na własny adres → mail „Potwierdź zapis do newslettera sudomie”.
+- Testy: `manage.py test agenda core` 90 OK (2 pominięte, PostgreSQL).
+
 ## Repozytorium (28.10)
 - **Prywatne** https://github.com/AltKorin/HotelAgenda (gałąź `main`). Poza gitem (`.gitignore`): dane klienta — `Materiały/`,
   `deploy/hotel.json`, `deploy/pobrane-niedzwiadek/`, `deploy/przyklady/`, `deploy/media/*` — są tylko lokalnie i na serwerze.

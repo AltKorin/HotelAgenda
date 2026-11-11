@@ -259,3 +259,13 @@
 - Wdrożone 28.10 po zgodzie (backup bazy przed, `DEMO_MAX=200`): testy na serwerze 83/83, smoke OK, `e2e:demo` na produkcji 5/5.
 - Test `test_terms_and_public_config_are_public` padał na serwerze niezależnie od demo (produkcja ma GA ID) — przypięte `GA_MEASUREMENT_ID=""` i `DEMO_MAX=0`.
 - 28.10: projekt pod gitem, prywatne repo https://github.com/AltKorin/HotelAgenda; dane klienta wykluczone w `.gitignore`.
+
+## Sesja 2026-11-11: newsletter sudomie przy rejestracji
+### Zrobiono
+- Pole newslettera przy rejestracji za flagą `NEWSLETTER_KLUCZ` (`backend/core/newsletter.py`, pole w `frontend/src/site/Site.tsx`, flaga `newsletter` w `/api/public-config/`); zapis przez sudomie.pl z kluczem aplikacji.
+### Zadziałało
+- `transaction.on_commit` + `captureOnCommitCallbacks` w testach: nieudana rejestracja nie zapisuje nikogo.
+### Nie zadziałało
+- Wdrożenie: agent nie ma dostępu do produkcji; robi Konrad.
+### Następne kroki
+- Commit, deploy, klucz w `.env`, próba na własnym adresie. Testy: `manage.py test agenda core` 90 OK (2 pominięte, PostgreSQL).

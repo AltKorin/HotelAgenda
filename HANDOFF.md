@@ -4,7 +4,7 @@
 
 Stan: 2026-10-16. MVP gotowe (kroki 1–6) + pakiet wdrożeniowy przećwiczony od zera. **PRODUKCJA: https://agenda.sudomie.pl** (LXC 106 na proxmox-hp, alias `hotelagenda-prod`, Cloudflare Tunnel `hotelagenda`) — szczegóły w `deploy/PROXMOX-HP.md`. Następne: część B `deploy/WDROZENIE.md` w hotelu. Klient: **Hotel Niedźwiadek** (Wdzydze) — `deploy/hotel.json` i logo przygotowane, przećwiczone lokalnie; czeka: rezerwacja DHCP dla LXC 106 na routerze, potwierdzenie `_do_potwierdzenia` przez dyrektora, slajdy hotelu.
 
-## Newsletter sudomie przy rejestracji (2026-11-11, KOD GOTOWY, NIEZACOMMITOWANE, NIEWDROŻONE)
+## Newsletter sudomie przy rejestracji (WDROŻONE 2026-11-12, gałąź newsletter-sudomie, czeka na merge)
 - Pole „Chcę dostawać newsletter sudomie” przy rejestracji, domyślnie niezaznaczone. Kod: `backend/core/newsletter.py`, pole w `frontend/src/site/Site.tsx`, flaga `newsletter` w `/api/public-config/`.
 - **Flaga:** bez `NEWSLETTER_KLUCZ` w `.env` pola nie ma i nic nie wychodzi. Z kluczem: po zatwierdzeniu rejestracji
   `POST https://sudomie.pl/chat-api/newsletter` (e-mail + IP użytkownika, nagłówek `X-Newsletter-Klucz`); sudomie.pl wysyła link

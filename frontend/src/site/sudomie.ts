@@ -10,6 +10,13 @@ export const SUDOMIE_PRODUCTS = [
     "en": "Websites and apps for businesses"
   },
   {
+    "id": "szkolenia",
+    "url": "https://szkolenia.sudomie.pl/",
+    "name": "Szkolenia",
+    "pl": "Szkolenia na żywo dla zespołów: obsługa gościa, zespół, AI",
+    "en": "Live team training: guest service, teamwork, AI"
+  },
+  {
     "id": "grafik",
     "url": "https://grafik.sudomie.pl/",
     "name": "Grafik",
